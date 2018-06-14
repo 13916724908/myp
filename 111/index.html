@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<p></p>
+</body>
+<script type="text/javascript">
+var a = [1,2,3]
+var b = {a:1}
+var c = 1;
+console.log(Object.prototype.toString.call(a))
+Object.prototype.toString.call(123)
+function add(){
+
+var now = new Date();  
+var strBuffer = [];  
+for (var i = 0; i < 10000; i++) {  
+    strBuffer.push('123456789123456789');  
+}  
+var str = strBuffer.join('');    
+
+
+}
+function test(func){
+
+    var start = new Date().getTime();//起始时间
+
+    func();//执行待测函数
+
+    var end = new Date().getTime();//接受时间
+
+    return (end - start)+"ms";//返回函数执行需要时间
+
+}
+
+var time = test(add);
+
+console.log(time);
+
+</script>
+</html>
